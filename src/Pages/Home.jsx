@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from "react";
+import HomeImg from "../assets/Image.jpeg";
 
 const Home = () => {
 
@@ -84,7 +85,7 @@ const Home = () => {
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full 
             bg-gradient-to-tr from-green-400 to-teal-500 p-1">
             <img
-              src="image.jpeg"
+              src={HomeImg}
               alt="Profile"
               className="w-full h-full object-cover rounded-full"
             />
