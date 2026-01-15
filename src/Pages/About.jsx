@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" 
       className="min-h-screen flex items-center justify-center
   bg-gradient-to-br from-black via-[#050b0f] to-black
-  text-white px-10 md:px-20 py-24 scroll-margin-top: 80px;"
+  text-white px-10 md:px-20 py-24 scroll-mt-16"
     >
       <div
         className="

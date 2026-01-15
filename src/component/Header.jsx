@@ -7,7 +7,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 z-50 w-full bg-gradient-to-r from-black via-[#050b0f] to-black text-white overflow-hidden">
       <div className="absolute top-0 right-1/4 w-[250px] h-[250px] bg-teal-500/10 rounded-full blur-[120px]"></div>
 
-      <div className="relative z-10 flex items-center justify-between px-6 md:px-20 py-4">
+      <div className="relative z-10 flex items-center justify-between px-4 md:px-10 py-1">
         <div className="flex items-center gap-3">
           <img
             src="https://www.creativefabrica.com/wp-content/uploads/2020/09/07/Monogram-VD-Logo-V2-Graphics-5315508-1.jpg"
@@ -58,7 +58,7 @@ const Header = () => {
       </div>
 
       {isOpen && (
-        <nav className="md:hidden bg-[#050b0f] text-center py-4 space-y-4">
+        <nav className="md:hidden bg-[#050b0f] text-center py-4 space-y-4 relative z-50">
           <a href="#home" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Home</a>
           <a href="#about" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>About</a>
           <a href="#education" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Education</a>
