@@ -7,6 +7,7 @@ import Education from './Pages/Education';
 import Skill from './Pages/Skill';
 import Project from './Pages/Project';
 import Contect from './Pages/Contect';
+import Footer from './component/Footer';
 
 import "./index.css";
 
@@ -20,6 +21,7 @@ const App = () => {
       <Skill />
       <Project />
       <Contect />
+      <Footer />
     </>
   )
 }
