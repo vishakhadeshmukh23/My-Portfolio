@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section
+    <section id="about"
       className="min-h-screen flex items-center justify-center
   bg-gradient-to-br from-black via-[#050b0f] to-black
   text-white px-10 md:px-20 py-24"

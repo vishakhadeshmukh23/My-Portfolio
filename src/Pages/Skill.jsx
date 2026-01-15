@@ -52,7 +52,7 @@ const LanguageCards = () => {
   const visibleSkills = showAll ? skills : skills.slice(0, 3);
 
   return (
-    <section className="bg-[#050b0f] py-24 px-6 md:px-20 text-white">
+    <section id="skill"  className="bg-[#050b0f] py-24 px-6 md:px-20 text-white">
       <h2 className="text-4xl font-bold text-center mb-16 text-green-400">
         Technical Skills
       </h2>

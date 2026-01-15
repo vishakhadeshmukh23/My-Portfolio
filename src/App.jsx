@@ -5,6 +5,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Skill from './Pages/Skill';
 import Project from './Pages/Project';
+import Contect from './Pages/Contect';
 import "./index.css";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
       <About />
       <Skill />
       <Project />
+      <Contect />
     </>
   )
 }

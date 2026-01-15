@@ -50,7 +50,7 @@ const Home = () => {
 
   return (
     <>
-      <section className="relative min-h-screen overflow-hidden 
+      <section id="home"  className="relative min-h-screen overflow-hidden 
         bg-gradient-to-br from-black via-[#050b0f] to-black
         flex flex-col md:flex-row items-center justify-between 
         px-10 md:px-20 py-20 pt-32 gap-12 text-white">
@@ -102,3 +102,5 @@ const Home = () => {
 };
 
 export default Home;
+
+

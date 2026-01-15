@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import portfolioImg from "../assets/js-project.png";
 import reactPortfolioImg from "../assets/react-project.png";
@@ -11,6 +11,8 @@ import travelImg from "../assets/travel-website.png";
 
 
 const Project = () => {
+  const [showAll, setShowAll] = useState(false);
+
   const projects = [
     {
       title: "Personal Portfolio Website",
@@ -48,7 +50,7 @@ const Project = () => {
       title: "Shopping Website",
       image: shoppingImg,
       description:
-        "A simple and interactive calculator application built using JavaScript.",
+        "This shopping website is built using HTML and CSS with a clean and modern design. It includes a navigation bar, product categories, and a visually attractive banner section.",
       tech: ["HTML", "CSS"],
       live: "https://shopping-website-sable-beta.vercel.app/",
     },
@@ -56,23 +58,23 @@ const Project = () => {
       title: "Rock-Paper-Scissors",
       image: rockPaperScissorsImg,
       description:
-        "A simple and interactive calculator application built using JavaScript.",
+        "This Rock-Paper-Scissors game is built using HTML, CSS, and JavaScript. It allows users to play against the computer with interactive UI and real-time result updates.",
       tech: ["HTML", "CSS", "JavaScript"],
       live: "https://rock-paper-scissors-ek92.vercel.app/",
     },
      {
-      title: "Rock-Paper-Scissors",
+      title: "Clock Website",
       image: clockImg,
       description:
-        "A simple and interactive calculator application built using JavaScript.",
+        "This clock website is built using HTML, CSS, and JavaScript. It displays the current time in real-time with a clean and responsive design.",
       tech: ["HTML", "CSS", "JavaScript"],
       live: "https://clock-dun-omega.vercel.app/",
     },
     {
-      title: "Rock-Paper-Scissors",
+      title: "To-Do-List",
       image: todolistImg,
       description:
-        "A simple and interactive calculator application built using JavaScript.",
+        "This To-Do List application is built using React and CSS. It allows users to add, delete, and manage tasks with a clean and responsive user interface.",
       tech: ["React", "CSS"],
       live: "https://to-do-list-assignment-pgp7.vercel.app/",
     },
@@ -82,13 +84,13 @@ const Project = () => {
   ];
 
   return (
-    <section className="bg-[#050b0f] py-24 px-6 md:px-20 text-white">
+    <section id="project" className="bg-[#050b0f] py-24 px-6 md:px-20 text-white">
       <h2 className="text-4xl font-bold text-center mb-16 text-green-400">
         My Projects
       </h2>
 
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        {projects.map((project, index) => (
+        {(showAll ? projects: projects.slice(0, 3)).map((project, index) => (
           <div
             key={index}
             className="bg-[#04130d] rounded-2xl overflow-hidden 
@@ -96,6 +98,7 @@ const Project = () => {
             hover:shadow-[0_0_30px_rgba(34,197,94,0.25)]
             transition duration-300"
           >
+
             <img
               src={project.image}
               alt={project.title}
@@ -137,6 +140,14 @@ const Project = () => {
           </div>
         ))}
       </div>
+              {projects.length > 3 &&(
+              <div className="text-center mt-12">
+                <button onClick={()=> setShowAll(!showAll)}
+                  className="px-8 py-3 rounded-full bg-green-400 text-balck font-semibold
+                  hover:bg-green-300 transition">
+                  {showAll ? "View Less Project" : "View More project"}</button>
+              </div>
+            )}
     </section>
   );
 };
