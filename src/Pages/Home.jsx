@@ -53,7 +53,7 @@ const Home = () => {
       <section id="home"  className="relative min-h-screen overflow-hidden 
         bg-gradient-to-br from-black via-[#050b0f] to-black
         flex flex-col md:flex-row items-center justify-between 
-        px-10 md:px-20 py-20 pt-32 gap-12 text-white">
+        px-10 md:px-20 py-20 pt-32 gap-12 text-white scroll-margin-top: 80px;">
 
         <div className="absolute top-1/3 right-24 w-[500px] h-[500px] 
           bg-green-500/20 rounded-full blur-[160px]"></div>

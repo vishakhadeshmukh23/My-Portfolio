@@ -19,6 +19,7 @@ const Header = () => {
         <nav className="hidden md:flex gap-20 text-base font-semibold">
           <a href="#home" className="hover:text-green-500">Home</a>
           <a href="#about" className="hover:text-green-500">About</a>
+          <a href="#education" className="hover:text-green-500">Education</a>
           <a href="#skill" className="hover:text-green-500">Skills</a>
           <a href="#project" className="hover:text-green-500">Project</a>
           <a href="#contact" className="hover:text-green-500">Contact</a>
@@ -60,6 +61,7 @@ const Header = () => {
         <nav className="md:hidden bg-[#050b0f] text-center py-4 space-y-4">
           <a href="#home" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Home</a>
           <a href="#about" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>About</a>
+          <a href="#education" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Education</a>
           <a href="#skill" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Skills</a>
           <a href="#project" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Project</a>
           <a href="#contact" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Contact</a>

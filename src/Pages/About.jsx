@@ -2,10 +2,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <section id="about"
+    <section id="about" 
       className="min-h-screen flex items-center justify-center
   bg-gradient-to-br from-black via-[#050b0f] to-black
-  text-white px-10 md:px-20 py-24"
+  text-white px-10 md:px-20 py-24 scroll-margin-top: 80px;"
     >
       <div
         className="
