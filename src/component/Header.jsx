@@ -58,11 +58,11 @@ const Header = () => {
 
       {isOpen && (
         <nav className="md:hidden bg-[#050b0f] text-center py-4 space-y-4">
-          <a href="#Home" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Home</a>
-          <a href="#About" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>About</a>
-          <a href="#Skill" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Skills</a>
-          <a href="#Project" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Project</a>
-          <a href="#Contact" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Contact</a>
+          <a href="#home" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Home</a>
+          <a href="#about" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>About</a>
+          <a href="#skill" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Skills</a>
+          <a href="#project" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Project</a>
+          <a href="#contact" className="block text-lg hover:text-green-500" onClick={() => setIsOpen(false)}>Contact</a>
         </nav>
       )}
     </header>
